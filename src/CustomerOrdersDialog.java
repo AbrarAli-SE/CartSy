@@ -75,7 +75,7 @@ public class CustomerOrdersDialog extends JDialog {
                          .append("; ");
                 }
 
-                model.addRow(new Object[]{orderId, date, "₹" + total, payment, items.toString()});
+                model.addRow(new Object[]{orderId, date, "Pkr " + total, payment, items.toString()});
             }
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, "Error: " + ex.getMessage());
